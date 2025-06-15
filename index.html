@@ -10,78 +10,128 @@
 </head>
 <body>
   <!-- SECTION 1: Header & Hero -->
-  <header>    
-  <!-- TODO: Tambahkan logo, menu navigasi, dan tombol Blog -->
-    <div class="topnav">
-      <h2>Trelloo</h2>
-      <a href="">Blog</a>
-      <a href="">Blog</a>
-      <a href="">Alert</a>
-      <a href="">Tips</a>
-      <a href="">Review</a>
+  <header>
+    <!-- TODO: Tambahkan logo, menu navigasi, dan tombol Blog -->
+    <div class="navbar">
+        <h1>Treloo</h1>
+        <ul>
+            <li><a href="###">Review</a></li>
+            <li><a href="###">Tips</a></li>
+            <li><a href="###">Alert</a></li>
+            <li><a href="###">Blog</a></li>
+            <li id="btnblog"><a href="###">Blog</a></li>
+        </ul>
     </div>
-  </div>
-    </nav>
-    
   </header>
 
   <section class="hero">
     <!-- TODO: Tambahkan heading, subheading, background image -->
-    <!-- TODO: Tambahkan form pencarian (Flight/Hotel, input lokasi & tanggal) -->
     <div class="header">
       <img src="assets/pexels-francesco-ungaro-2835436 1.png" alt="background">
-        <div class="overlay">
-             <h1>Discover Your Life, Travel <br>Where you Want</h1>
-        <h2>Would you explore natur paradise in the world, let's find the best <br> destination in the world with us</h2>
-      <div class="tab-switcher">
-        <button>Flight</button>
-        <button>Hotel</button>
-      </div>
-      <input type="text" placeholder="Living From">
-      <input type="text" placeholder="Going to">
-      <input type="date" placeholder="Leave">
-      <input type="date" placeholder="Return">
-      <button style="margin-top:10px; padding: 10px 20px;">Search</button>
+    
+      <div class="overlay">
+
+        <h1>Discover Your Life, Travel <br> Where You Want</h1>
+        <h2>Would you explore natur paradise in the world, let's find the best <br> destination in world with us</h2>
     </div>
+    <!-- TODO: Tambahkan form pencarian (Flight/Hotel, input lokasi & tanggal) -->
   </section>
+  <div class="search-box-wrapper">
+    <div class="search-box">
+    <div class="tab-selector">
+      <button class="tab active"><img src="assets/Airplane Mode On.png"> Flight</button>
+      <button class="tab"><img src="assets/Hotel Star.png"> Hotel</button>
+    </div>  
+
+    <div class="form-section">
+      <div class="location-box">
+        <div class="location">
+          <p class="label">Living From</p>
+          <p class="value">Dubai</p>
+        </div>
+        <img id="terbangbos" src="assets/Airplane Mode On Grey.png">
+        <div class="location">
+          <p class="label">Going to</p>
+          <p class="value">New York</p>
+        </div>
+      </div>
+
+      <div class="date-box">
+        <div class="date">
+          <p class="label">Leave <img src="assets/Airplane Mode On.png"></p>
+          <p class="value">23 Jan, Sat</p>
+        </div>
+        <img id="dateimg" src="assets/Planner.png">
+        <div class="date">
+          <p class="label"><img id="balikimg" src="assets/Airplane Mode On.png">Return</p>
+          <p class="value">14 Jan, Thu</p>
+        </div>
+      </div>
+
+      <div class="search-btn">
+        <img src="assets/Search Icon.png"></i>
+      </div>
+    </div>
+  </div>
+  </div>
+
 
   <!-- SECTION 2: Recommended Destination -->
   <section class="recommended">
     <!-- TODO: Tambahkan tab navigasi dan 4 kartu destinasi -->
-    <div class="product" id="product"></div> 
     <h1>Recommended Destination</h1>
-    <div class="tab-switcher">
-      <button>Popular</button>
-      <button>Adventure</button>
-      <button>Beach</button>
+    <div class="navigasi">
+      <p>Popular</p>
+      <p>Adventure</p>
+      <p>Beath</p>
     </div>
-    <div class="destination-cards">
-      <div class="card">
-        <img src="assets/unsplash_Ai2TRdvI6gM.png" alt="Kina Mountain">
-        <div class="card-body">
-          <strong>Kina Mountain</strong><br>
-          Cambodia ⭐ 3.6
+    <div class="dest-place">
+      <div class="container-dest">
+        <div class="rating">
+          <img src="assets/rate.png">
+          <p>⭐3.4</p>
+        </div>
+        <img src="assets/unsplash_DlkF4-dbCOU.png">
+        <h3>Kina Mountain</h3>
+        <div class="dest-desc">
+          <img src="assets/Location.png">
+          <p>Cambodia</p>
         </div>
       </div>
-      <div class="card">
-        <img src="assets/unsplash_CSpjU6hYo_0.png" alt="Kina Mountain">
-        <div class="card-body">
-          <strong>Kina Mountain</strong><br>
-          Cambodia ⭐ 4.5
+      <div class="container-dest">
+        <div class="rating">
+          <img src="assets/rate.png">
+          <p>⭐4.5</p>
+        </div>
+        <img src="assets/unsplash_CSpjU6hYo_0.png">
+        <h3>Kina Mountain</h3>
+        <div class="dest-desc">
+          <img src="assets/Location.png">
+          <p>Cambodia</p>
         </div>
       </div>
-      <div class="card">
-        <img src="assets/unsplash_DlkF4-dbCOU.png" alt="Kina Mountain">
-        <div class="card-body">
-          <strong>Kina Mountain</strong><br>
-          Cambodia ⭐ 4.2
+      <div class="container-dest">
+        <div class="rating">
+          <img src="assets/rate.png">
+          <p>⭐4.2</p>
         </div>
-          </div>
-      <div class="card">
-        <img src="assets/unsplash_K_TbABnVzHo.png" alt="Kina Mountain">
-        <div class="card-body">
-          <strong>Kina Mountain</strong><br>
-          Cambodia ⭐ 3.3
+        <img src="assets/unsplash_Ai2TRdvI6gM.png">
+        <h3>Kina Mountain</h3>
+        <div class="dest-desc">
+          <img src="assets/Location.png">
+          <p>Cambodia</p>
+        </div>
+      </div>
+      <div class="container-dest">
+        <div class="rating">
+          <img src="assets/rate.png">
+          <p>⭐3.5</p>
+        </div>
+        <img src="assets/unsplash_K_TbABnVzHo.png">
+        <h3>Kina Mountain</h3>
+        <div class="dest-desc">
+          <img src="assets/Location.png">
+          <p>Cambodia</p>
         </div>
       </div>
     </div>
@@ -90,39 +140,42 @@
   <!-- SECTION 3: Travel Any Corner Info -->
   <section class="global-info">
     <!-- TODO: Tambahkan gambar, angka statistik, dan teks promosi -->
-   <divclass="introduction" id="introduction">
-        <img src="assets/unsplash_tQpypKA92k8.png" class="info-image" alt="Traveler">
-        <div class="info-box">5000+ Tourists</div>
-        <div class="info-box">300+ Destinations</div>
-        <div class="info-box">150+ Hotels</div>
-      </div>
-      <div class="content"></div>
-        <h2>Travel Any Corner of The World With Us</h2>
-        <p>Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
-        <button style="padding: 10px 20px;">Contact Us</button>
-      </div>
-    </div>
+     <div class="img-stat">
+      <img src="assets/unsplash_tQpypKA92k8.png">
+      <div class="overlay-object promo-dest"><h1>300+</h1><p>Destinations</p></div>
+      <div class="overlay-object promo-tourists"><h1>5000+</h1><p>Tourists</p></div>
+      <div class="overlay-object promo-hotels"><h1>150+</h1><p>Hotels</p></div>
+     </div>
+     <div class="text-promotion">
+      <h1>Travel Any Corner of <br> The World With Us</h1>
+      <p>Would you explore nature paradise in the world, let's find the best destinations in word with us,
+        Would you explore nature paradise in the world, let's find the best destinations in word with us,
+        Would you explore nature paradise in the world, let's find the best destinations in word with us,
+        Would you explore nature paradise in the world, let's find the best destinations in word with us</p>
+      <p id="txt-space">Would you explore nature paradise in the world, let's find the best destinations in word with us</p>
+      <p id="txt-contactus"><a href="###">Contact Us</a></p>
+     </div>
   </section>
 
   <!-- SECTION 4: Promo dan Footer -->
-  
+  <section class="promosi">
     <!-- TODO: Tambahkan teks promo dan tombol daftar -->
-    <div class="promo">
-      <img src="assets/unsplash_Q1p7bh3SHj8.png" alt="background">
-        <div class="overlay">
-    <h1>Don't Miss The 50% Discount if <br> you register today </h1>
-     <button style="padding: 10px 20px; margin-top: 10px;">Register Today</button>
- 
-    </section>
-        
-   
+    <img src="assets/unsplash_Q1p7bh3SHj8.png">
+    <div class="text-promosi">
+      <h1>Don't Miss The 50% Discount If <br> You Register Today</h1>
+      <p><a href="###">Register Today</a></p>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <!-- TODO: Tambahkan copyright dan navigasi bawah -->
-    <div>
-    <p>© 2022 Treloo LLC – All right reserved.</p>
-    
-      <a href="#">Review</a> | <a href="#">Tips</a> | <a href="#">Alerts</a> | <a href="#">Blog</a>
+  <footer>
+    <div class="footer-bar">
+      <p class="copyright">© 2022 Treloo LLC – All rights reserved</p>
+      <div class="footer-links">
+        <a href="###">Review</a>
+        <a href="###">Tips</a>
+        <a href="###">Alert</a>
+        <a href="###">Blog</a>
+      </div>
     </div>
   </footer>
 </body>
